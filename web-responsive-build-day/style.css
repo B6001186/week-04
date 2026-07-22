@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 1. ส่วน Navbar */
+navbar {
+            background-color: #9CAB84;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+.account-icon {
+            width: 40px;
+            height: 40px;
+            fill: #fff;
+            margin-left: 30px;
+        }
+
+.cart-icon-total {
+            width: 40px;
+            height: 40px;
+            fill: #fff;
+}
+
+.logo {
+            font-size: 1.5rem;
+            font-weight: bolder;
+            font-family: "Noto Sans Thai", sans-serif;
+            align-items: center;
+        }
+
+.nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+.nav-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-family: "Noto Sans Thai", sans-serif;
+        }
+
+.nav-links a:hover {
+            color: #F6E261;
+        }
+
+/* 2. ส่วนเนื้อหาหลัก (Main Content) */
+main {
+            max-width: 1200px;
+            width: 100%;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 50px;
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+
+.card-product {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    margin: 20px;
+}
+
+.product-image {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    background-color: #AEB784;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    width: 280px;
+}
+
+.product-info {
+    background-color: #41431B;
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product-title {
+    font-family: "Noto Sans Thai", sans-serif;
+    font-weight: bold;
+    font-size: large;
+    color: #fff;
+}
+
+.product-price {
+    font-family: "Noto Sans Thai", sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    color: #fff;
+}
+
+.cart-icon {
+            width: 45px;
+            height: 45px;
+            fill: #fff;
+        }
+
+        /* 3. ส่วน Footer */
+footer {
+            background-color: #9CAB84;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: auto;
+            font-family: "Noto Sans Thai", sans-serif;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+
+@media (max-width: 768px) {
+  navbar {
+            background-color: #9CAB84;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+
+.account-icon {
+            width: 20px;
+            height: 20px;
+            fill: #fff;
+            margin-left: 10px;
+        }
+
+.cart-icon-total {
+            width: 20px;
+            height: 20px;
+            fill: #fff;
+}
+
+.logo {
+            font-weight: bolder;
+            font-family: "Noto Sans Thai", sans-serif;
+            align-items: center;
+            font-size: 12px;
+        }
+
+.nav-links {
+            list-style: none;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+.nav-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-family: "Noto Sans Thai", sans-serif;
+            font-size: 12px;
+        }
+
+.nav-links a:hover {
+            color: #F6E261;
+        }
+
+/* 2. ส่วนเนื้อหาหลัก (Main Content) */
+main {
+            max-width: 1200px;
+            width: 100%;
+            margin: 2rem auto;
+            padding: 0 1rem; 
+        }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    gap: 10px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.card-product {
+    width: 100px;
+    height: 150px;
+    background-color: #fff;
+    margin: 10px;
+}
+
+.product-image {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    background-color: #AEB784;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    width: 90px;
+}
+
+.product-info {
+    background-color: #41431B;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product-title {
+    font-family: "Noto Sans Thai", sans-serif;
+    font-weight:600;
+    font-size: 10px;
+    color: #fff;
+}
+
+.product-price {
+    font-family: "Noto Sans Thai", sans-serif;
+    font-weight: 400;
+    font-size: 7px;
+    color: #fff;
+}
+
+.cart-icon {
+            width: 20px;
+            height: 20px;
+            fill: #fff;
+        }
+
+        /* 3. ส่วน Footer */
+footer {
+            background-color: #9CAB84;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: auto;
+            font-family: "Noto Sans Thai", sans-serif;
+            font-size: 12px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            box-sizing: border-box;
+        }
+
+}
