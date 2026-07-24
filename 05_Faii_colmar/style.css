@@ -1,32 +1,517 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-nav {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1000;
+
+body {
+  width: 100%;
+  font-family: "Manrope", sans-serif;
+  color: #484848;
+}
+
+.nav-web {
+  display: none;
+}
+
+.img-orientation-web {
+  display: none;
+}
+
+.information-banner {
+  display: none;
+}
+
+.course-img {
+    display: none;
+}
+
+.course p {
+    display: none;
+}
+
+.img-campus-web {
+  display: none;
+}
+
+.img-guest-lecture-web {
+  display: none;
+}
+
+.thesis-exhibits-content {
+  display: none;
+}
+
+.thesis-exhibits-video-desc {
+  display: none;
+}
+
+.card-courses p,
+.card-courses img {
+  display: none;
+}
+
+.footer-link {
+  display: none;
+}
+
+/* part nav mobile */
+.nav-mobile {
+  z-index: 1000;
+  background-color: white;
+  height: 64px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+.hero {
+  width: 100%;
+  background-color: #eaeced;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero img {
+  display: flex;
+  width: 100%;
+}
+
+.centent-banner-part {
+  padding: 32px 16px;
+}
+
+.banner-header {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.content-banner {
+  margin-top: 32px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.button-banner {
+  display: flex;
+  justify-content: center;
+}
+
+.button-start-here {
+  border: 0;
+  background-color: #9b9b9b;
+  color: white;
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.information-banner img {
+  width: 100%;
+}
+
+.header-information {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.button-read-more {
+  border: none;
+  font-family: "Manrope", sans-serif;
+  color: #7bb2e6;
+  background-color: transparent;
+}
+
+.img-orientation-mobile,
+.img-campus-mobile,
+.img-guest-lecture-mobile {
+  width: 100%;
+  padding: 16px;
+}
+
+.img-campus-mobile,
+.img-guest-lecture-mobile {
+  margin-top: 48px;
+}
+
+.desc-guest-lecture {
+  margin-bottom: 32px;
+}
+
+.desc-guest-lecture,
+.desc-campus,
+.desc-orientation {
+  padding: 0px 32px;
+}
+
+.header-course {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.card-marketing-course,
+.card-business-course,
+.card-data-course,
+.card-design-course,
+.card-computer-art-course,
+.card-software-engineering-course {
+  background-color: #d9d9d9;
+}
+
+.video-thesis-exhibits {
+  width: 100%;
+  height: 280px;
+  padding-bottom: 24px;
+}
+
+#start-learning {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.header-course {
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 24px;
+  margin-bottom: 8px;
+}
+
+.course {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 32px 16px;
+}
+
+#thesis-exhibit {
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+
+.footer-credit {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+}
+
+/* for web */
+@media screen and (min-width: 768px) {
+  .nav-mobile {
+    display: none;
+  }
+
+  .img-orientation-mobile, .img-campus-mobile, .img-guest-lecture-mobile {
+    display: none;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 100%;
+    font-family: "Manrope", sans-serif;
+    color: #484848;
+  }
+
+  .nav-web {
     background-color: white;
     height: 64px;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
 
-.nav-logo {
+  .nav-logo {
     display: flex;
     align-items: center;
     margin-left: 24px;
     height: 32px;
-}
+  }
 
-.nav-link {
+  .colmar-logo {
+    font-weight: 900;
+    font-size: 32px;
+  }
+
+  .academy-logo {
+    font-size: 32px;
+  }
+
+  .nav-link-web {
+    list-style: none;
     display: flex;
+    gap: 16px;
+    margin-right: 24px;
+    padding: 0;
     align-items: center;
-    margin-left: 24px;
-    height: 32px;
+  }
+
+  .logo-icon {
+    height: 50px;
+    width: 50px;
+  }
+
+    .hero {
+    width: 100%;
+    background-color: #eaeced;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:nowrap;
+  }
+
+  .hero img {
+    display: flex;
+    width: 60%;
+    margin: 32px 24px;
+  }
+
+  .button-start-here {
+    border: 0;
+    background-color: #4B4B4B;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 8px;
+    font-family: "Manrope", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .centent-banner-part {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+    .button-banner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .information-banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+    
+  .information-banner img {
+    width: 100%;
+  }
+
+  .img-orientation-web {
+    display: flex;
+  }
+
+  .img-campus-web {
+    display: flex;
+  }
+
+  .img-guest-lecture-web {
+    display: flex;
+  }
+
+  .information {
+    display: flex;
+  }
+
+  .card-orientation-date, .card-campus,
+.card-guest-lecture {
+    display: flex;
 }
 
-.logo-icon {
-    height: 32px;
+.information-card-detail {
+    display: flex;
+    flex-direction: column;
+}
+.course{
+    display: flex;
+    flex-direction: column;
+    background-color: #EAECED;
+}
+.card-courses{
+    display: flex;
+}
+
+.card-courses-row1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-courses-row2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.course-img {
+    width: 100%;
+}
+
+ .card-marketing-course,
+  .card-business-course,
+  .card-data-course,
+  .card-design-course,
+  .card-computer-art-course,
+  .card-software-engineering-course {
+    background-color: white;
+  }
+
+  .thesis {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .thesis-content{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .thesis-exhibits-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .thesis-exhibits-video-desc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-thesis-fisma {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-thesis-nowthen {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-courses p,
+  .card-courses img {
+    display: flex;
+  }
+
+  .footer-link {
+    display: flex;
+  }
+
+  .icon {
     width: 32px;
-}
+    height: 32px;
+  }
 
+  
+  .banner-header {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+
+  .content-banner {
+    margin-top: 32px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .header-information {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .button-read-more {
+    border: none;
+    font-family: "Manrope", sans-serif;
+    color: #7bb2e6;
+    background-color: transparent;
+  }
+
+  .img-orientation-mobile,
+  .img-campus-mobile,
+  .img-guest-lecture-mobile {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .img-campus-mobile,
+  .img-guest-lecture-mobile {
+    margin-top: 48px;
+  }
+
+  .desc-guest-lecture {
+    margin-bottom: 32px;
+  }
+
+  .desc-guest-lecture,
+  .desc-campus,
+  .desc-orientation {
+    padding: 0px 32px;
+  }
+
+  .header-course {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .video-thesis-exhibits {
+    width: 100%;
+    height: 280px;
+    padding-bottom: 24px;
+  }
+
+  #start-learning {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  .header-course {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+  }
+
+  .course {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 32px 16px;
+  }
+
+  #thesis-exhibit {
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 16px;
+  }
+
+  .footer-credit {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+  }
+}
