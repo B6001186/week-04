@@ -1,0 +1,32 @@
+body {
+
+}
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: white;
+    height: 64px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    height: 32px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    height: 32px;
+}
+
+.logo-icon {
+    height: 32px;
+    width: 32px;
+}
+
